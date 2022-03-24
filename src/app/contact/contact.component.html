@@ -1,0 +1,51 @@
+<section id="Contact">
+    <form id="cform" [formGroup]="contactForm" (ngSubmit)="whenSubmit()">
+      <h1 id="head">Contact Form</h1>
+      <div id="e-box">
+      <label for="mail" id="mail-head">Email-ID</label><br>
+      <input id ="mail" formControlName="email" text="email" name="email" placeholder="email-id" required>
+      </div>
+      <div class=list>
+      <fieldset class="field" required>
+      <legend>Gender</legend>
+        <input class="click" formControlName="gender" type="radio" name="gender" value="Male">Male<br>
+      <input class="click" formControlName="gender"type="radio" name="gender"
+  value="Female">Female<br>
+    <input class="click" formControlName="gender" type="radio" name="gender" value="other">Other
+      </fieldset>
+    </div>
+     <div class="list">
+      <fieldset class="field" required>
+         <legend>Citizenship</legend>
+        <input class="click" formControlName="nationality" type="checkbox" name="nationality" value="indian">Indian<br>
+      <input class="click" formControlName= "nationality" type="checkbox" name="nationality"
+  value="nri">NRI<br>
+    <input class="click" formControlName="nationality" type="checkbox" name="nationality" value="other">Other
+      </fieldset>   
+      </div>
+          <div id="area">
+          <div id="describe">Desciption</div>
+          <textarea id="box" formControlName="box" placeholder="enter here..."></textarea><br>
+          </div>
+          <div id="down-box">
+          <label for="dropdown"  id="country">Country</label><br>
+          <select id="dropdown" formControlName="country">
+            <option value="india">India</option>
+            <option value="russia">Russia</option>
+            <option value="france">France</option>
+            <option value="usa">America</option>
+            <option value="china">China<option>
+            <option value="srilanka">SriLanka</option>
+            <option value="other">Other</option>
+      </select><br>
+            </div>
+  <div id="tele">
+    <div id="mobile">Mobile Number </div>
+    <input id="number" formControlName="number" text="tel" name="number" placeholder="enter" required>
+  </div>
+  <div id="last">
+    <input type="submit" id="submit" value="submit">
+  </div>
+             
+    </form>
+  </section>

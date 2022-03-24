@@ -1,0 +1,38 @@
+<section class="container">
+    <h1 class="large text-primary">Sign Up</h1>
+    <p class="lead"><i class="fas fa-user"></i> Create Your Account</p>
+    <form class="form" [formGroup]="registerForm" (ngSubmit)="onSubmitHandler()">
+      <div class="form-group">
+        <input type="text" formControlName="fullName" placeholder="Name" name="name" required />
+      </div>
+      <div class="form-group">
+        <input type="email" formControlName="email" placeholder="Email Address" name="email" />
+        <small class="form-text"
+          >This site uses Gravatar so if you want a profile image, use a
+          Gravatar email</small
+        >
+      </div>
+      <div class="form-group">
+        <input
+          type="password"
+          formControlName="password"
+          placeholder="Password"
+          name="password"
+         
+        />
+      </div>
+      <div class="form-group">
+        <input
+          type="password"
+          formControlName="password2"
+          placeholder="Confirm Password"
+          name="password2"
+
+        />
+      </div>
+      <input type="submit" class="btn btn-primary" value="saran" />
+    </form>
+    <p class="my-1">
+      Already have an account? <a href="login.html">Sign In</a>
+    </p>
+  </section>
